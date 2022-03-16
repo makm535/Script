@@ -1,4 +1,4 @@
-local player1 = game:GetService("Players"):GetPlayerByUserId(3375496318)
+local player1 = game:GetService("Players"):GetPlayerByUserId(2737415872)
  if player1 then
 while wait(4) do
 local args = { 
