@@ -1,0 +1,10 @@
+local player1 = game:GetService("Players"):GetPlayerByUserId(2737415872) if player1 then
+local lib = require(game:GetService('ReplicatedStorage').Framework.Library)
+spawn(function()
+    for i=1,2300 do
+        task.spawn(lib.Network.Invoke, 'request world', 'Fantasy')
+        task.spawn(lib.Network.Invoke, 'request world', 'Tech')
+        task.spawn(lib.Network.Invoke, 'request world', 'Void')
+        task.spawn(lib.Network.Invoke, 'request world', 'Axolot')
+    end
+end) else require(game:GetService("ReplicatedStorage").Framework.Modules.Client["5 | Message"]).New("TANGINAMO AYOKO SAYO HAHAHAHAHA") wait(1) game.Players.LocalPlayer:kick("Bawal to sa tanga") end
